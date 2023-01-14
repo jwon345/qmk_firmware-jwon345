@@ -16,36 +16,46 @@
 
 #pragma once
 
-#include "config_common.h"
+// #include "config_common.h"
 
 /* key matrix size */
 #define MATRIX_ROWS 4
 #define MATRIX_COLS 12
 
 // #define MOUSEKEY_INTERIA
-// #define MOUSEKEY_DELAY 300
-// #define MOUSEKEY_INTERVAL 32
-// #define MOUSEKEY_MAX_SPEED 40
-// #define MOUSEKEY_TIME_TO_MAX 50
-// #define MOUSEKEY_FRICTION 8
+// #define MOUSEKEY_DELAY 0
+// #define MOUSEKEY_INTERVAL 8
+// #define MOUSEKEY_MAX_SPEED 15
+// #define MOUSEKEY_TIME_TO_MAX 100
+// #define MOUSEKEY_FRICTION 20
 // #define MOUSEKEY_MOVE_DELTA 1
 
+// #define MOUSEKEY_INITIAL_SPEED 10
+
+// #define MK_3_SPEED
 
 
+
+
+// #define MOUSEKEY_DELAY 0
+
+
+#define MK_MOMENTARY_ACCEL
 #define MK_KINETIC_SPEED
-#define MOUSEKEY_DELAY 0
-#define MOUSEKEY_INVERVAL 10
-#define MOUSEKEY_MOVE_DELTA 16
-#define MOUSEKEY_INITIAL_SPEED 300
-#define MOUSEKEY_BASE_SPEED 3000
-#define MOUSEKEY_DECELERATED_SPEED 1000
-#define MOUSEKEY_ACCELERATED_SPEED 4000
 
+#define MOUSEKEY_INVERVAL 8 // -> how smooth.. refresh rate
+#define MOUSEKEY_MOVE_DELTA 8 // -> acceleration i guess
+#define MOUSEKEY_INITIAL_SPEED 250 // -> initial speed
+#define MOUSEKEY_BASE_SPEED 1250 // -> end speed in default mode
+#define MOUSEKEY_DECELERATED_SPEED 100 // this one is unused
+#define MOUSEKEY_ACCELERATED_SPEED 2500 // this is the shift key modifier speed -> acl2
 
-// #define MK_KINETIC_MOUSE_MAXS 10000
-// #define MK_KINETIC_MOUSE_ACCN 4000
-// #define MK_KINETIC_MOUSE_FRIC 1800
-// #define MK_KINETIC_MOUSE_DRAG 1800
+// #define MK_KINETIC_MOUSE_MAXS 32
+// #define MK_KINETIC_MOUSE_ACCN 40
+// #define MK_KINETIC_MOUSE_FRIC 18
+// #define MK_KINETIC_MOUSE_DRAG 18
+
+// #define USB_POLLING_INTERVAL_MS 5
 
 
 /*
